@@ -1,0 +1,6 @@
+apache-beam[gcp]
+argparse
+logging
+re
+os
+json
