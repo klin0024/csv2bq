@@ -14,12 +14,12 @@ Var           | Value                                         | Description
 
 pip3 install -r requirements.txt
 
-python3 csv2bq.py --project=gcp-expert-sandbox-allen \
---region=us-central1 \
---credential=gcp-expert-sandbox-allen-c1fcfd19238a.json \
---temp_bucket=gcp-expert-sandbox-allen-temp_bucket \
---input=gs://gcp-expert-sandbox-allen/folder/data.csv \
---output=gcp-expert-sandbox-allen:dataset.table \
+python3 csv2bq.py --project=gcp-expert-sandbox-allen \\
+--region=us-central1 \\
+--credential=gcp-expert-sandbox-allen-c1fcfd19238a.json \\
+--temp_bucket=gcp-expert-sandbox-allen-temp_bucket \\
+--input=gs://gcp-expert-sandbox-allen/folder/data.csv \\
+--output=gcp-expert-sandbox-allen:dataset.table \\
 --schema='{"admit":"FLOAT","gre":"FLOAT","gpa":"FLOAT","rank":"FLOAT"}'
 
 
@@ -40,10 +40,10 @@ Var           | Value                                         | Description
 
 pip3 install -r requirements.txt
 
-python3 csv2bq-part.py --project=gcp-expert-sandbox-allen \
---region=us-central1 \
---credential=gcp-expert-sandbox-allen-c1fcfd19238a.json \
---temp_bucket=gcp-expert-sandbox-allen-temp_bucket \
---input=gs://gcp-expert-sandbox-allen/folder/data.csv \
---output=gcp-expert-sandbox-allen:dataset.table \  
+python3 csv2bq-part.py --project=gcp-expert-sandbox-allen \\
+--region=us-central1 \\
+--credential=gcp-expert-sandbox-allen-c1fcfd19238a.json \\
+--temp_bucket=gcp-expert-sandbox-allen-temp_bucket \\
+--input=gs://gcp-expert-sandbox-allen/folder/data.csv \\
+--output=gcp-expert-sandbox-allen:dataset.table \\  
 --schema='{"admit":{"enabled":1,"type":"FLOAT"},"gre":{"enabled":1,"type":"FLOAT"},"gpa":{"enabled":0,"type":"FLOAT"},"rank":{"enabled":1,"type":"FLOAT"}}'
