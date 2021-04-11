@@ -45,5 +45,5 @@ python3 csv2bq-part.py --project=gcp-expert-sandbox-allen \\<br>
 --credential=gcp-expert-sandbox-allen-c1fcfd19238a.json \\<br>
 --temp_bucket=gcp-expert-sandbox-allen-temp_bucket \\<br>
 --input=gs://gcp-expert-sandbox-allen/folder/data.csv \\<br>
---output=gcp-expert-sandbox-allen:dataset.table \\<br>  
+--output=gcp-expert-sandbox-allen:dataset.table \\<br>
 --schema='{"admit":{"enabled":1,"type":"FLOAT"},"gre":{"enabled":1,"type":"FLOAT"},"gpa":{"enabled":0,"type":"FLOAT"},"rank":{"enabled":1,"type":"FLOAT"}}'
