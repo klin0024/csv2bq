@@ -19,7 +19,8 @@ python3 csv2bq.py --project=gcp-expert-sandbox-allen \
 --credential=gcp-expert-sandbox-allen-c1fcfd19238a.json \
 --temp_bucket=gcp-expert-sandbox-allen-temp_bucket \
 --input=gs://gcp-expert-sandbox-allen/folder/data.csv \
---output=gcp-expert-sandbox-allen:dataset.table \  --schema='{"admit":"FLOAT","gre":"FLOAT","gpa":"FLOAT","rank":"FLOAT"}'
+--output=gcp-expert-sandbox-allen:dataset.table \
+--schema='{"admit":"FLOAT","gre":"FLOAT","gpa":"FLOAT","rank":"FLOAT"}'
 
 
 
