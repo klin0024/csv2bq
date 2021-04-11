@@ -8,7 +8,7 @@ Var           | Value                                         | Description
 --temp_bucket | gcp-expert-sandbox-allen-temp_bucket	      | 暫存bucket名稱
 --input	      | gs://gcp-expert-sandbox-allen/folder/data.csv | 輸入的CSV位置
 --output	  | gcp-expert-sandbox-allen:dataset.table	      | 輸出bq的表
---schema	  | '{"admit":"FLOAT", <br> "gre":"FLOAT",<br>"gpa":"FLOAT",<br>"rank":"FLOAT"}' | schema json
+--schema	  | '{"admit":"FLOAT",<br>"gre":"FLOAT",<br>"gpa":"FLOAT",<br>"rank":"FLOAT"}' | schema json
 
 # csv2bq.py 使用說明
 
