@@ -61,6 +61,13 @@ def run(argv=None):
                         required=True,
                         help='credential json key.')
 
+
+    parser.add_argument('--skip_csv_lines',
+                        dest='skip_csv_lines',
+                        required=False,
+                        help='skip csv lines.',
+                        default=1)
+
     # Parse arguments from the command line.
     known_args, pipeline_args = parser.parse_known_args(argv)
 
@@ -84,7 +91,7 @@ def run(argv=None):
 
     (
      p | 'Read from a File' >> beam.io.ReadFromText(known_args.input,
-                                                  skip_header_lines=1)
+                                                  skip_header_lines=known_args.skip_csv_lines)
     
      # This stage of the pipeline translates from a CSV file single row
      # input as a string, to a dictionary object consumable by BigQuery.
