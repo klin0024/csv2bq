@@ -64,6 +64,7 @@ def run(argv=None):
 
     parser.add_argument('--skip_csv_lines',
                         dest='skip_csv_lines',
+                        type=int,
                         required=False,
                         help='skip csv lines.',
                         default=1)
