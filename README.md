@@ -24,6 +24,7 @@ python3 csv2bq.py --project=gcp-expert-sandbox-allen \\<br>
 --schema='{"admit":"FLOAT","gre":"FLOAT","gpa":"FLOAT","rank":"FLOAT"}'
 
 
+
 # csv2bq-part.py 參數說明
 
 Var           | Value                                         | Description
@@ -50,7 +51,8 @@ python3 csv2bq-part.py --project=gcp-expert-sandbox-allen \\<br>
 --schema='{"admit":{"enabled":1,"type":"FLOAT"},"gre":{"enabled":1,"type":"FLOAT"},"gpa":{"enabled":0,"type":"FLOAT"},"rank":{"enabled":1,"type":"FLOAT"}}'
 
 
-# csv2bq-part.py 參數說明
+
+# csv2bq-schema.py 參數說明
 
 Var           | Value                                         | Description
 :-------------|:----------------------------------------------|:------------------------
